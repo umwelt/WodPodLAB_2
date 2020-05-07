@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GhostLabelsView" customModule="WodPodLab" customModuleProvider="target">
+            <connections>
+                <outlet property="allReps" destination="kdf-0U-dXR" id="zvh-Ed-CGk"/>
+                <outlet property="interval" destination="2L3-YG-fWc" id="Hg1-Gw-HRw"/>
+                <outlet property="mean" destination="Vab-P2-fHb" id="nbi-bV-KfY"/>
+                <outlet property="trainingTime" destination="5rr-rb-Tzx" id="KFr-QQ-7hJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Reps: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdf-0U-dXR">
+                    <rect key="frame" x="20" y="20" width="67" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="z7J-CL-52l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interval:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2L3-YG-fWc">
+                    <rect key="frame" x="20" y="56" width="58" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ry9-zI-L9Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Training Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rr-rb-Tzx">
+                    <rect key="frame" x="19.999999999999993" y="92" width="102.33333333333331" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ZL5-h6-SQ1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mean: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vab-P2-fHb">
+                    <rect key="frame" x="20" y="128" width="49" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="038-fU-GJu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interval is expressed in reps, converting 3 secs of activity to 1 rep" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usr-L9-9bd">
+                    <rect key="frame" x="20" y="164" width="374" height="33.666666666666657"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33.670000000000002" id="0wE-a7-e2M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Vab-P2-fHb" firstAttribute="top" secondItem="5rr-rb-Tzx" secondAttribute="bottom" constant="16" id="1Cy-wn-DBu"/>
+                <constraint firstItem="kdf-0U-dXR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="8ip-vi-Fij"/>
+                <constraint firstItem="Vab-P2-fHb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="AzY-yG-bgp"/>
+                <constraint firstItem="kdf-0U-dXR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="SHb-2e-HI6"/>
+                <constraint firstItem="Usr-L9-9bd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="UqH-zK-5il"/>
+                <constraint firstItem="2L3-YG-fWc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Zb6-9T-tWy"/>
+                <constraint firstItem="Usr-L9-9bd" firstAttribute="top" secondItem="Vab-P2-fHb" secondAttribute="bottom" constant="16" id="afc-oX-niI"/>
+                <constraint firstItem="5rr-rb-Tzx" firstAttribute="top" secondItem="2L3-YG-fWc" secondAttribute="bottom" constant="16" id="bjV-JT-7Us"/>
+                <constraint firstItem="5rr-rb-Tzx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bpi-If-avB"/>
+                <constraint firstAttribute="trailing" secondItem="Usr-L9-9bd" secondAttribute="trailing" constant="20" id="kso-fn-HcH"/>
+                <constraint firstItem="2L3-YG-fWc" firstAttribute="top" secondItem="kdf-0U-dXR" secondAttribute="bottom" constant="16" id="rCG-6u-pZ3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-52.173913043478265" y="328.45982142857139"/>
+        </view>
+    </objects>
+</document>

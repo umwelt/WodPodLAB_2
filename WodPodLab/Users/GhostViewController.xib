@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GhostViewController" customModule="WodPodLab" customModuleProvider="target">
+            <connections>
+                <outlet property="barChart" destination="eMv-1i-b0A" id="Uv5-HG-CIx"/>
+                <outlet property="detailLabel" destination="72N-yO-bJw" id="jSG-4P-i4H"/>
+                <outlet property="intervalLabel" destination="xhq-4b-Mwf" id="sdg-aK-GjC"/>
+                <outlet property="meanLabel" destination="src-BF-4AD" id="Nro-IW-tCn"/>
+                <outlet property="noData" destination="yLM-ef-aHb" id="lrz-Hr-kaV"/>
+                <outlet property="partialLabel" destination="8Qn-4n-Qmb" id="OXC-Ge-K9U"/>
+                <outlet property="totalRepsLabel" destination="SfO-VA-0EI" id="DC5-Kg-WJ6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMv-1i-b0A" customClass="BarChartView" customModule="Charts">
+                    <rect key="frame" x="0.0" y="64" width="414" height="240"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="5d8-l2-EnT"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEAN: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="src-BF-4AD">
+                    <rect key="frame" x="20" y="334" width="86" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARTIAL: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qn-4n-Qmb">
+                    <rect key="frame" x="20" y="381" width="109" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTERVAL: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhq-4b-Mwf">
+                    <rect key="frame" x="20" y="428" width="124" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL REPS: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfO-VA-0EI">
+                    <rect key="frame" x="20" y="475" width="147" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO PERFORMANCES DATA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLM-ef-aHb">
+                    <rect key="frame" x="84" y="436" width="246" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72N-yO-bJw">
+                    <rect key="frame" x="20" y="542" width="374" height="76.5"/>
+                    <string key="text">Total Reps is the number of repetitions on performance training  + the calculated reps from Interval Training.
+Where 3 seconds = 1 rep</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yLM-ef-aHb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0qO-ES-efZ"/>
+                <constraint firstAttribute="trailing" secondItem="72N-yO-bJw" secondAttribute="trailing" constant="20" id="6eU-oj-nmW"/>
+                <constraint firstItem="8Qn-4n-Qmb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9Mg-YK-eNE"/>
+                <constraint firstItem="72N-yO-bJw" firstAttribute="top" secondItem="SfO-VA-0EI" secondAttribute="bottom" constant="40" id="EA1-0y-oiQ"/>
+                <constraint firstItem="eMv-1i-b0A" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="FuF-Rc-Lih"/>
+                <constraint firstItem="eMv-1i-b0A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Oho-A0-IR2"/>
+                <constraint firstItem="xhq-4b-Mwf" firstAttribute="top" secondItem="8Qn-4n-Qmb" secondAttribute="bottom" constant="20" id="UJs-vG-YWc"/>
+                <constraint firstItem="xhq-4b-Mwf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Y6x-C1-nS3"/>
+                <constraint firstItem="SfO-VA-0EI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Yon-Yb-XOk"/>
+                <constraint firstItem="72N-yO-bJw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="k48-AZ-y2y"/>
+                <constraint firstItem="8Qn-4n-Qmb" firstAttribute="top" secondItem="src-BF-4AD" secondAttribute="bottom" constant="20" id="pBh-n4-E6L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eMv-1i-b0A" secondAttribute="trailing" id="pPg-xa-xyr"/>
+                <constraint firstItem="yLM-ef-aHb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tTU-Si-CQN"/>
+                <constraint firstItem="src-BF-4AD" firstAttribute="top" secondItem="eMv-1i-b0A" secondAttribute="bottom" constant="30" id="tj6-0v-m9l"/>
+                <constraint firstItem="SfO-VA-0EI" firstAttribute="top" secondItem="xhq-4b-Mwf" secondAttribute="bottom" constant="20" id="tsl-Wa-Um5"/>
+                <constraint firstItem="src-BF-4AD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="wFl-82-o6x"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="133" y="117"/>
+        </view>
+    </objects>
+</document>
